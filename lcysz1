@@ -12,6 +12,14 @@ proxies:
   - {name: 🇭🇰 香港 01, server: dg-hk-node01.linkthink.app, port: 10386, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 239017:W3lVj4ORun, obfs-param: ""}
   - {name: 🇭🇰 香港 02, server: dg-hk-node02.linkthink.app, port: 12755, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 239017:W3lVj4ORun, obfs-param: ""}
   - {name: 🇭🇰 香港04-测试, server: 42.157.196.104, port: 20861, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 239017:W3lVj4ORun, obfs-param: ""}
+  - {name: 🇭🇰 VIP1 香港, server: gkdcm.gkdcn.net, port: 22779, type: ssr, cipher: chacha20-ietf, password: m2KSOD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5033:hh8o92, obfs-param: .microsoft.com}
+  - {name: 11-8YouTube搜索 逍遥观世界, server: 212.102.54.163, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 11-8YouTube搜索 逍遥观世界 2, server: 156.146.33.66, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 11-8YouTube搜索 逍遥观世界 3, server: 212.102.54.163, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 11-8YouTube搜索 逍遥观世界 4, server: 156.146.33.66, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 11-8YouTube搜索 逍遥观世界 5, server: 156.146.33.66, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 11-8YouTube搜索 逍遥观世界 6, server: 212.102.54.163, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇭🇰 AZ香港-500G-禁ping, server: azhk.7979.gay, port: 23360, type: vmess, uuid: 5537cad3-fcc1-499a-a7d8-491cb78da3e5, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -25,6 +33,14 @@ proxy-groups:
       - 🇭🇰 香港 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港04-测试
+      - 🇭🇰 VIP1 香港
+      - 11-8YouTube搜索 逍遥观世界
+      - 11-8YouTube搜索 逍遥观世界 2
+      - 11-8YouTube搜索 逍遥观世界 3
+      - 11-8YouTube搜索 逍遥观世界 4
+      - 11-8YouTube搜索 逍遥观世界 5
+      - 11-8YouTube搜索 逍遥观世界 6
+      - 🇭🇰 AZ香港-500G-禁ping
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -38,6 +54,14 @@ proxy-groups:
       - 🇭🇰 香港 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港04-测试
+      - 🇭🇰 VIP1 香港
+      - 11-8YouTube搜索 逍遥观世界
+      - 11-8YouTube搜索 逍遥观世界 2
+      - 11-8YouTube搜索 逍遥观世界 3
+      - 11-8YouTube搜索 逍遥观世界 4
+      - 11-8YouTube搜索 逍遥观世界 5
+      - 11-8YouTube搜索 逍遥观世界 6
+      - 🇭🇰 AZ香港-500G-禁ping
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -62,6 +86,14 @@ proxy-groups:
       - 🇭🇰 香港 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港04-测试
+      - 🇭🇰 VIP1 香港
+      - 11-8YouTube搜索 逍遥观世界
+      - 11-8YouTube搜索 逍遥观世界 2
+      - 11-8YouTube搜索 逍遥观世界 3
+      - 11-8YouTube搜索 逍遥观世界 4
+      - 11-8YouTube搜索 逍遥观世界 5
+      - 11-8YouTube搜索 逍遥观世界 6
+      - 🇭🇰 AZ香港-500G-禁ping
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
